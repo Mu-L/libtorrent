@@ -49,8 +49,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "libtorrent/aux_/storage_utils.hpp" // for iovec_t
 #include "libtorrent/aux_/file_pointer.hpp"
 
-namespace libtorrent {
-namespace aux {
+namespace lt::aux {
 
 	using slot_index_t = aux::strong_typedef<int, struct slot_index_tag_t>;
 
@@ -133,7 +132,6 @@ namespace aux {
 		// maps a piece index to the part-file slot it is stored in
 		std::unordered_map<piece_index_t, slot_index_t> m_piece_map;
 	};
-}
 }
 
 #endif

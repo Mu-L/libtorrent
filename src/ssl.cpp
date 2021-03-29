@@ -21,7 +21,7 @@ see LICENSE file.
 #include <gnutls/x509.h>
 #endif
 
-namespace libtorrent::aux::ssl {
+namespace lt::aux::ssl {
 
 void set_trust_certificate(native_context_type nc, string_view pem, error_code &ec)
 {
@@ -182,6 +182,6 @@ namespace {
 }
 #endif
 
-} // libtorrent::aux::ssl
+} // lt::aux::ssl
 
 #endif

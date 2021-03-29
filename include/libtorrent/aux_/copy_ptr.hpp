@@ -13,7 +13,7 @@ see LICENSE file.
 
 #include <memory>
 
-namespace libtorrent::aux {
+namespace lt::aux {
 
 	template <class T>
 	struct copy_ptr

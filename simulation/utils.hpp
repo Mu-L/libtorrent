@@ -40,12 +40,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "libtorrent/torrent_status.hpp"
 #include "libtorrent/settings_pack.hpp"
 #include "simulator/simulator.hpp"
-
-namespace libtorrent
-{
-	struct session;
-	struct alert;
-}
+#include "libtorrent/fwd.hpp"
 
 // adds an IP filter to disallow 50.0.0.1 and 50.0.0.2
 void filter_ips(lt::session& ses);

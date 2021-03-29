@@ -38,8 +38,7 @@ see LICENSE file.
 #include <plog/Formatters/FuncMessageFormatter.h>
 #endif
 
-namespace libtorrent {
-namespace aux {
+namespace lt::aux {
 
 namespace errc = boost::system::errc;
 
@@ -430,7 +429,6 @@ void rtc_signaling::debug_log(char const* fmt, ...) const noexcept try
 catch (std::exception const&) {}
 #endif
 
-}
 }
 
 #endif

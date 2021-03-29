@@ -60,7 +60,7 @@ see LICENSE file.
 #include <functional>
 #include <exception>
 
-namespace libtorrent::aux::ssl {
+namespace lt::aux::ssl {
 
 using error_code = boost::system::error_code;
 
@@ -154,7 +154,7 @@ TORRENT_EXTRA_EXPORT void set_context(stream_handle_type s, context_handle_type 
 TORRENT_EXTRA_EXPORT bool has_context(stream_handle_type s, context_handle_type c);
 TORRENT_EXTRA_EXPORT context_handle_type get_context(stream_handle_type s);
 
-} // libtorrent::aux:ssl
+} // lt::aux:ssl
 
 #endif // TORRENT_USE_SSL
 
